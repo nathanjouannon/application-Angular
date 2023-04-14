@@ -1,11 +1,11 @@
 
 <div class="face-snap-card">
-    <h2>{{title}}</h2>
-    <img [src]="imgUrl" alt="image partagée" width="200">
-    <p>mise en ligne le {{ createDate}}</p>
-    <p>{{description}}</p>
+    <h2>{{facesnap.title}}</h2>
+    <img [src]="facesnap.imgUrl" alt="image partagée" width="200">
+    <p>mise en ligne le {{facesnap.createDate}}</p>
+    <p>{{facesnap.description}}</p>
     <p> 
-        <button  (click)="onAddSnap()" >Oh snap !</button>
-        👍 {{snaps}} 
+        <button (click)="isSnapChange()" >{{buttonSnap}}</button>
+        👍 {{facesnap.snaps}} 
     </p>
 </div>
