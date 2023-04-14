@@ -7,31 +7,57 @@ import { FaceSnap } from './models/face-snap.model';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  firstSnap!: FaceSnap;
-  secondSnap!: FaceSnap;
-  thirdSnap!: FaceSnap;
+  facesnaps!: FaceSnap[];
 
   ngOnInit() {
-    this.firstSnap = new FaceSnap(
-      'Archibalde',
-      'Un gentil monsieurs',
-      new Date(),
-      3,
-      'https://tse1.mm.bing.net/th?id=OIP.lvHuTIhKq_vQnhhrSJNkcgHaJA&pid=Api'
-    ) 
-    this.secondSnap = new FaceSnap(
-      'Olivio',
-      `nan il n'aime pas les olives`,
-      new Date(),
-      1,
-      'https://tse4.mm.bing.net/th?id=OIP.UMoOEVPN7LD05Rv5ITSEswHaHy&pid=Api'
-    )
-    this.thirdSnap = new FaceSnap(
-      'Tatiana',
-      'mystèrieuse et tres maquillé',
-      new Date(),
-      87,
-      'https://tse4.mm.bing.net/th?id=OIP.dY2cR9-niZFKKAMR63RguQHaHS&pid=Api'
-    )
+    this.facesnaps = [
+      {
+        title: 'Archibalde',
+        description: 'Un gentil monsieurs',
+        createDate: new Date(),
+        snaps: 10,
+        imgUrl: 'https://tse1.mm.bing.net/th?id=OIP.lvHuTIhKq_vQnhhrSJNkcgHaJA&pid=Api',
+        location: 'Angers'
+      },
+      {
+        title: 'Olivio',
+        description: `nan il n'aime pas les olives`,
+        createDate: new Date(),
+        snaps: 170,
+        imgUrl: 'https://tse4.mm.bing.net/th?id=OIP.UMoOEVPN7LD05Rv5ITSEswHaHy&pid=Api',
+        location: 'BG world'
+      },
+      {
+        title: 'Tatiana',
+        description: 'mystèrieuse et tres maquillé',
+        createDate: new Date(),
+        snaps: 250,
+        imgUrl: 'https://tse4.mm.bing.net/th?id=OIP.dY2cR9-niZFKKAMR63RguQHaHS&pid=Api',
+      },
+      {
+        title: 'Archibalde',
+        description: 'Un gentil monsieurs',
+        createDate: new Date(),
+        snaps: 3,
+        imgUrl: 'https://tse1.mm.bing.net/th?id=OIP.lvHuTIhKq_vQnhhrSJNkcgHaJA&pid=Api',
+        location: 'Angers'
+      },
+      {
+        title: 'Olivio',
+        description: `nan il n'aime pas les olives`,
+        createDate: new Date(),
+        snaps: 1,
+        imgUrl: 'https://tse4.mm.bing.net/th?id=OIP.UMoOEVPN7LD05Rv5ITSEswHaHy&pid=Api',
+        location: 'BG world'
+      },
+      {
+        title: 'Tatiana',
+        description: 'mystèrieuse et tres maquillé',
+        createDate: new Date(),
+        snaps: 87,
+        imgUrl: 'https://tse4.mm.bing.net/th?id=OIP.dY2cR9-niZFKKAMR63RguQHaHS&pid=Api',
+      },
+      
+    ]
   }
 }
