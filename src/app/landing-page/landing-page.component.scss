@@ -1,0 +1,21 @@
+.landing-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .landing-page-title {
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        border-bottom: 2px solid #252525;
+    }
+    h1,
+    p {
+        text-align: center;
+    }
+    img {
+        width: 500px;
+    }
+    button {
+        margin: 0 20px ;
+    }
+}

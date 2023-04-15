@@ -1,0 +1,23 @@
+.snapface-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(142deg, rgba(28,159,215,1) 0%, rgba(177,177,196,1) 50%, rgba(117,0,255,1) 100%);
+    width: 100%;
+    margin-bottom: 40px;
+    h1 {
+        font-size: 18px;
+        font-weight: 700;
+        padding: 25px;
+    }
+    nav {
+        position: absolute;
+        right: 20px;
+    }
+    a {
+        margin: 20px;
+        text-decoration: none;
+        color: black;
+        font-weight: 600;
+    }
+}
